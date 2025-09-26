@@ -1,8 +1,8 @@
-package com.codegym.GreatestCommonDividor;
+package com.codegym.GreatestCommonDivisor;
 
 import java.util.Scanner;
 
-public class GreatestCommonDividor {
+public class GreatestCommonDivisor {
     private static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
