@@ -18,13 +18,13 @@ public class FahCel {
                 case 1:
                     System.out.println("Enter F:");
                     Fah = scanner.nextDouble();
-                    Cel = (Fah - 32) * 5 / 9;
+                    Cel = fahToCel(Fah);
                     System.out.println("C: " + Cel);
                     break;
                 case 2:
                     System.out.println("Enter C: ");
                     Cel = scanner.nextDouble();
-                    Fah = Cel * 9 / 5 + 32;
+                    Fah = celToFah(Cel);
                     System.out.println("F: " + Fah);
                     break;
                 case 0:
@@ -35,5 +35,13 @@ public class FahCel {
                     break;
             }
         } while (choice != 0);
+    }
+
+    public static double fahToCel(double Fah) {
+        return (Fah - 32) * 5 / 9;
+    }
+
+    public static double celToFah(double Cel) {
+        return Cel * 9 / 5 + 32;
     }
 }
