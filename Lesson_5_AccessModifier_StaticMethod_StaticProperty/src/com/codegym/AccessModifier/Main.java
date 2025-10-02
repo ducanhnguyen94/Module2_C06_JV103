@@ -10,5 +10,6 @@ public class Main {
 
         System.out.println("Radius of circle: " + radius);
         circle.getArea();
+        
     }
 }
