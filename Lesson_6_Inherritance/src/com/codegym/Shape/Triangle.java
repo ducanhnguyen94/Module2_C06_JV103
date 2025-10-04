@@ -1,5 +1,7 @@
 package com.codegym.Shape;
 
+import com.codegym.Comparable.Shape.Shape;
+
 public class Triangle extends Shape {
 
     public Triangle() {
