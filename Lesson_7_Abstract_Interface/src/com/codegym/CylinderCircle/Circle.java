@@ -1,6 +1,6 @@
-package com.codegym.Comparable.Shape;
+package com.codegym.CylinderCircle;
 
-public class Circle extends Shape {
+public class Circle {
     private double radius;
 
     public Circle() {
@@ -11,11 +11,6 @@ public class Circle extends Shape {
         this.radius = radius;
     }
 
-    public Circle(String color, boolean filled, double radius) {
-        super(color, filled);
-        this.radius = radius;
-    }
- 
     public double getRadius() {
         return radius;
     }
@@ -24,22 +19,18 @@ public class Circle extends Shape {
         this.radius = radius;
     }
 
-    @Override
     public double getArea() {
         return Math.pow(this.radius, 2) * Math.PI;
     }
 
-    @Override
     public double getPerimeter() {
-        return (this.radius * 2 * Math.PI);
+        return (Math.PI * this.radius * 2);
     }
 
     @Override
     public String toString() {
-        return "A circle with radius=" + this.radius + ", which is a subclass of " + super.toString();
+        return "Circle [radius=" + radius + "]";
     }
-
-
 
     
 }

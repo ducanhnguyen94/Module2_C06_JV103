@@ -1,8 +1,7 @@
-package com.codegym.CircleCylinder;
+package com.codegym.CylinderCircle;
 
-import com.codegym.CircleCylinder.Circle;
 
-public class Cylinder extends Circle {
+public class Cylinder extends Circle{
     private double height;
 
     public Cylinder() {
@@ -11,11 +10,12 @@ public class Cylinder extends Circle {
     }
 
     public Cylinder(double height) {
+        super();
         this.height = height;
     }
 
-    public Cylinder(double radius, String color, double height) {
-        super(radius, color);
+    public Cylinder(double radius, double height) {
+        super(radius);
         this.height = height;
     }
 
@@ -27,13 +27,19 @@ public class Cylinder extends Circle {
         this.height = height;
     }
 
-    public double getVolumn() {
-        double area = super.getArea();
-        return area * this.height;
+    public double getVolume() {
+        return super.getArea() * this.height;
+    }
+
+    @Override
+    public double getArea() {
+        return super.getArea() * 2 + super.getPerimeter() * this.height;
     }
 
     @Override
     public String toString() {
         return "Cylinder [height=" + height + "]" + " is a subclass of " + super.toString();
     }
+
+    
 }
