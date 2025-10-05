@@ -5,5 +5,7 @@ public class Main {
         Circle circle = new Circle(10);
         circle.resize(5);
         System.out.println(circle.getRadius());
+        circle.howToColor("cuk");
+        System.out.println(circle.toString());
     }
 }

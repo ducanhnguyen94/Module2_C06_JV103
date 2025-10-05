@@ -43,4 +43,9 @@ public class Circle extends Shape implements Sizeable{
     public void resize(double percent) {
         this.radius = this.radius + this.radius * percent / 100;
     }
+
+    @Override
+    public void howToColor(String color) {
+        super.setColor(color);
+    }
 }
