@@ -1,7 +1,5 @@
 package com.codegym.Comparable.Shape;
 
-import com.codegym.Comparable.Shape.Shape;
-
 public class Rectangle extends Shape{
     private double width, length;
 
