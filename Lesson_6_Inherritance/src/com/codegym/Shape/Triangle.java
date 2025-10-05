@@ -1,6 +1,5 @@
 package com.codegym.Shape;
 
-import com.codegym.Shape.Shape;
 
 public class Triangle extends Shape {
 

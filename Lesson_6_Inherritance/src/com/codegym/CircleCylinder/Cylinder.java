@@ -1,7 +1,5 @@
 package com.codegym.CircleCylinder;
 
-import com.codegym.CircleCylinder.Circle;
-
 public class Cylinder extends Circle {
     private double height;
 
